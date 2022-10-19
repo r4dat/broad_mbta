@@ -1,7 +1,7 @@
 from ApiPull import ApiPull
 
 
-class Routes():
+class Routes:
     # Defined in business case.
     LIGHT_RAIL, HEAVY_RAIL = 0, 1  # Defined in V3 MBTA API
 
