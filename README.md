@@ -32,7 +32,7 @@ Sample output:
 > 
 > Stop: Downtown Crossing, Connecting Routes: Orange Line, Red Line
 
-Question 3
+## Question 3
 Extend your program again such that the user can provide any two stops on the subway routes you listed for
 question 1.
 List a rail route you could travel to get from one stop to the other. 
@@ -54,9 +54,8 @@ The Route and Stop classes make use of the ApiPull functions to retrieve their r
 The Graph class contains and constructs an adjacency dictionary of the graph. The current implementation was tested on single-lines initially, and so makes the assumption that sequential stops are adjacent. So adding all Red, then all Orange stops behaves as expected, but adding both at once (equivalent to "filter[route]=Red,Orange") creates an incorrect graph. 
 The Pathfinding class accepts a graph at instatiation and performs Dijkstra's algorithm given a source station. It then returns a cost dictionary and a station based path from source to destination.
 
-## Runner Class:
+## Runner Class
 This is a program runner. As a TODO we should really add argparse and create a command-line utility here. But a runner file is good enough for demonstration. For question 3 there is some functional code that should be pushed down into the Pathfinding class to return subway lines from stations. The subway-paths may look wonky because the transition from station -> line picks whichever is on top of the set, which may cause one-line dips in a station with multiple lines. E.g. Park Street is both Red Line and Green Line so a path through could have either. 
 
-##Testing
-
+## Testing
 Full testing framework was not completed though TODO tests are described in the tests folder. 
