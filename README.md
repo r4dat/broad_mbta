@@ -61,7 +61,7 @@ This is a program runner. As a TODO we should really add argparse and create a c
 Full testing framework was not completed though TODO tests are described in the tests folder. 
 
 ## General TODO
-Need to commit to the classes holding a copy of their data with appropriate getters as needed. Right now there's a lot of calls hitting the LRU a layer or two deep, and portions where knowing the underlying representation is a dict of specific key:val design is needed. E.g. Rail ID : Long Name etc. Ideally the next person shouldn't have to know that. Also, should rewrite in Java. 
+Need to commit to the classes holding a copy of their data with appropriate getters as needed. The two big issues are a lot of static/class methods scattered about, and right now there's a lot of calls hitting the LRU a layer or two deep, and portions where knowing the underlying representation is a dict of specific key:val design is needed. E.g. Rail ID : Long Name etc. Ideally the next person shouldn't have to know that. Also, should rewrite in Java. 
 
 ## Libraries
 See environment.yaml for full environment. 
