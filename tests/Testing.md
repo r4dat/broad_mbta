@@ -8,11 +8,13 @@
 ## Graph
 * Confirm graph fails gracefully with an empty update. 
 * Test seq to adj. E.g. [a,b,c] => a : [b], b:[a,c], c: [b]...
+* Detect non-unique vertices
 
 ## Pathfinding
 * Test source != target. 
 * Test source and target exist in graph. 
 * Test Dijkstra's on disconnected graphs. 
+* Station strings currently case-sensitive, fix and test. 
 
 ## Stops
 * Should have a test confirming the generation of intersection stops is working. 
