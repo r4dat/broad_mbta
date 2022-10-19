@@ -30,6 +30,7 @@ if __name__ == '__main__':
     Src_Node = 'State'
     Dst_Node = 'Porter'
     c, station_path = PathInstance.dijkstra(Src_Node,Dst_Node)
+    """Below should be moved into PathInstance but leaving here for now."""
     if c[Dst_Node]==1000:
         print(f"No path exists between {Src_Node} and {Dst_Node}.")
     else:
@@ -40,6 +41,6 @@ if __name__ == '__main__':
                 LinePath.append(next_line)
             if LinePath[len(LinePath)-1] != next_line:
                 LinePath.append(next_line)
-        print(f"{','.join(LinePath)}")
+        print(f"Path {Src_Node} to {Dst_Node} -> {','.join(LinePath)}")
 
 
