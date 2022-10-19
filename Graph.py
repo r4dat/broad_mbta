@@ -1,4 +1,3 @@
-from Stops import Stops
 # There is probably a library for this but let's go from first principles I guess.
 
 class Graph:

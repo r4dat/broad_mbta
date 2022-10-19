@@ -1,8 +1,9 @@
-import requests
-from os import getenv
-from functools import lru_cache
 import time
 from abc import abstractmethod
+from functools import lru_cache
+from os import getenv
+
+import requests
 
 
 def __reqerrorhandler(response):
