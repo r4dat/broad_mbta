@@ -62,3 +62,7 @@ Full testing framework was not completed though TODO tests are described in the 
 
 ## General TODO
 Need to commit to the classes holding a copy of their data with appropriate getters as needed. Right now there's a lot of calls hitting the LRU a layer or two deep, and portions where knowing the underlying representation is a dict of specific key:val design is needed. E.g. Rail ID : Long Name etc. Ideally the next person shouldn't have to know that. Also, should rewrite in Java. 
+
+## Libraries
+See environment.yaml for full environment. 
+Primary installed libraries are Requests and Pytest.
